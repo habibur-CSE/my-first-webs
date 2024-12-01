@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+ <html>
+  <title> How to hide element using JavaScript  
+</title>
+  <head>
+    <style>
+      body{
+        text-align: center;
+        margin: 5%;
+        padding: 5%;
+      }
+      .container{
+        border-radius: 20px;
+        padding:10%;
+        border: 5px solid rgb(136, 77, 77);
+        box-shadow: 10px 10px 10px gray;
+      }
+      button{
+        font-size: 24px;
+        border: none;
+        border-radius: 20px;
+        padding: 20px;
+        background-color: RGB(80, 243, 47)
+      }
+      h1{
+        font-size: 42px;
+      }
+      p{
+        font-size: 32px;
+      }
+    </style>
+  </head>
+ <body>
+   <div class="container">
+     <h1> How to hide element using JavaScript </h1>
+    <p id = "pid"> Hide element using JavaScript </p>
+    <button type = "button" onclick = "displayHide() 
+"> Hide </button>
+    <button type = "button" onclick = "displayShow() 
+"> Show </button>
+    <script>
+     function displayHide() {
+       document.getElementById("pid").style.visibility 
+= "hidden";
+     }
+     function displayShow() {
+       document.getElementById("pid").style.visibility 
+= "visible";
+     }
+    </script>
+   </div>
+ </body>
+ </html>
